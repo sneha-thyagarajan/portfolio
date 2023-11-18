@@ -43,7 +43,7 @@ function Contact() {
                         <ListItem key={item.title} >
                              <ListItemIcon style={{color:"#3399ff"}}>{item.icon}</ListItemIcon>
                              <div>
-                              <ListItemText primary={item.title}></ListItemText>
+                              <ListItemText primary={item.title} ></ListItemText>
                               <a href={item.path} style={{fontWeight:500, fontSize:"0.7rem", color:"#7A7A7A"}}> {item.text}</a>
                              </div>  
                        </ListItem>
