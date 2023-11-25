@@ -103,7 +103,7 @@ function Skills(){
     const Ai=[
         {
             title:"Machine Learning",
-            text:"30",
+            text:"10",
             icon:<LinearProgress color="secondary"  variant="determinate" value={30} style={{height:"10px", borderRadius:"10px" , marginTop:"10px", marginBottom:"10px"}}/>
         },
     ]

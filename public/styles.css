@@ -1,6 +1,6 @@
 *{
     margin:0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: 'Poppins', sans-serif;
     text-decoration:none;
 
@@ -81,7 +81,8 @@ body{
     background-color: #232323;
     border-radius: 0.5rem;
     min-height: 100vh;
-    flex-grow:3;
+    /* flex-grow:3; */
+    overflow:hidden;
 
 
 }
@@ -119,7 +120,7 @@ body{
     color:#bab9b9
   }
 
-  .skills{
+  .skills, .projects, .arts{
     width:100%;
     display: flex;
     flex-direction: column;
@@ -137,12 +138,8 @@ body{
     gap:1rem;
 }
 
-   /* .skillsContainer{
-    margin:0.5rem;
-    display:flex;
-    flex-direction: row ;
-    justify-content: space-between;
-  } */
+
+
 .webContainer, .langContainer, .aiContainer, .databaseContainer{
     background-color: #2a2929;
     border-radius: 0.5rem;
@@ -173,7 +170,36 @@ body{
     grid-column-start: 1;
     grid-column-end: 3;
 }
+.cards{    
+    position: relative;
+    width: fit-content;
+    height:100%;
+    border-radius: 0.8rem;
+    
+}
+.projectsContainer{
+    margin:0.5rem;
+    display:grid;
+    gap:1rem;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  } 
+.hovertext{
 
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 19px;
+    text-shadow: #000000 0  0 0.3rem;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.cards:hover .hovertext{
+    opacity: 1;
+    transition: 0.5s;
+}
 
 h4{
     color:#3399ff;
@@ -182,3 +208,33 @@ h4{
 h3{
     color:#bab9b9;
 }
+.MuiCard-root:hover {
+
+    opacity: 0.5;
+    transform: translateY(-5px);
+    transition: transform 0.5s;
+}
+.artsContainer{
+display: flex;
+flex-direction: column;
+gap:1rem;
+}
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    background-position: start;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  
+

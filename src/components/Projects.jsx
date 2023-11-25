@@ -1,10 +1,59 @@
 import React from "react";
+import Cards from "./Cards";
+import Todolist from "../images/Todolist.png";
+import Weather from "../images/Weather.png";
 
 function Projects(){
+    const project=[
+        {
+            name:"Weather Wizard",
+            alt:"Weather App",
+            content:" Express.js, Node.js, OpenWeatherMap API, EJS, CSS",
+            img: Weather,
+            url:"https://github.com/sneha-thyagarajan/Weather-WebApplication"
+           
+
+
+        },
+        {
+            name:"To-Do Master",
+            alt:"To-Do List",
+            content:"CSS, Node.js, Express.js, EJS ",
+            img:Todolist,
+
+            url:"https://github.com/sneha-thyagarajan/ToDoList_UsingExpressJs"
+        }
+
+
+    ]
+    function open(id) {
+        window.open(project[id].url, "_blank");
+    }
 
     return(
-        <div>
+        <div className="projects">
             <h1>Projects</h1>
+            <div className="projectsContainer">
+            { project.map((project, index)=>{
+            return(
+                <Cards
+                    key={index}
+                    id={index}
+                    name={project.name}
+                    alt={project.alt}
+                    content={project.content}
+                    img={project.img} 
+                    onClick={open}
+                />
+                
+            )
+        })}
+            </div>
+
+       
+
+
+
         </div>
     )
 }
