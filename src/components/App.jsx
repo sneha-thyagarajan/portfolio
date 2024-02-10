@@ -14,21 +14,13 @@ function App(){
     return(
 
            <div>
-
                <Navbar/>
-
-
-
                <div className="main">
+               <button className="tog" style={{display:"none"}}> &gt; </button>             
                <Sidebar />
-               <Maincontent />
-               
+               <Maincontent />              
                </div>
-
            </div>
-
-        
-
     )
 
 }

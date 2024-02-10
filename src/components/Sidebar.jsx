@@ -12,7 +12,6 @@ function Sidebar() {
              <Avatar
                alt="Profile"
                src={image}
-              //  sx={{ width: 170, height: "auto" }}
                variant='rounded'
              />
         </div>

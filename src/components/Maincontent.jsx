@@ -15,7 +15,7 @@ function Maincontent(){
         <Skills/>
 
          <hr style={{width:"40%", margin:"auto"}}/>
-       <Projects/>
+        <Projects/>
 
        <hr style={{width:"40%", margin:"auto"}}/>
        

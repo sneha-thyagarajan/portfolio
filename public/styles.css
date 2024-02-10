@@ -47,43 +47,42 @@ body{
 
 }
 .main{
-
     display:flex;
     flex-direction: row;
-
-
     justify-content: space-between;
-    padding: 0 2rem;
-
+    padding-right: 3rem;
+    padding-left: 1.5;
+    width: 100vw;
+   
 
 }
 
 .sidebar{
 
     background-color: #232323;
-    /* background-color: rgb(223, 223, 223);#232323 */
     position:sticky;
     top:4rem;
-   bottom:4rem;
+    bottom:4rem;
     border-radius: 0.5rem;
     height: fit-content;
-
-    max-width: fit-content;
+   max-width: fit-content;
     padding:3rem 1rem;
     margin:0 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:2rem;
-
-
-
+    flex:1;
+    flex-shrink: 1;
 
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px ) and ( min-width: 600px) {
     .sidebar{
         bottom: 0;
+        margin-left: 1;
+        padding: auto 0;
+        max-width: fit-content;
     }
     .avatar{
         height:50px;
@@ -116,14 +115,45 @@ body{
         gap:2rem !important;
       }
 }
+.tog{
+    color:white;
+    background-color:#232323;
+     height:"fit-content";
+     padding:5px;
+     border-radius:5px;
+     font-size: 2rem;
+     z-index: 3;
+
+    }
 
 @media (max-width:600px) {
-    .main {
-        margin-left:0;  
+    .sidebar{
+        display:none;
     }
-    /* .collapse{
-        display: inline !important;
-    } */
+    .tog{
+        cursor: pointer;
+        display:inline-block !important;
+        position: fixed !important;
+    }
+    .tog:hover{
+        display: none !important;
+        + .sidebar{
+            display: block !important;
+            position: absolute !important;
+            box-shadow: black 0 0 100px;
+
+                
+        }
+        + .sidebar hr{
+            display: none !important;
+        }
+
+    }
+    .maincontent{
+       margin-left: 3rem !important;
+
+    }
+
 
 }
 
@@ -133,7 +163,7 @@ body{
     padding-top:5px;
   }
 div.MuiAvatar-root {
-    width: 170px;
+    width: clamp(10rem, 2vw, 19rem);
     height: auto;
   }
 
@@ -142,34 +172,29 @@ div.MuiAvatar-root {
     height: auto;
     width: max-content;
     background-color: #575757;
-
-    /* height: max-content ; */
     border-radius: 50%;
     padding: 0.6rem;
+
 }
 .contact{
     display: flex;
     flex-direction: column;
     gap:0.5rem;
     color:white;
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
 }
 
 .maincontent{
-
-    flex: 1;
+    flex:4;
     background-color: #232323;
     border-radius: 0.5rem;
-    /* min-height: 100vh; */
-    
-    /* flex-grow:3; */
     overflow:hidden;
+    flex-shrink: 0;
 
 
 }
 .about{
     font-size: clamp(1.2rem, 1.8vw, 1.8rem);
-   
-    /* font-size: 1.6rem; */
     text-align: start;
     width:fit-content;
     margin-top:2rem;
@@ -199,9 +224,7 @@ div.MuiAvatar-root {
   }
 
   .description{
-    font-size: clamp(0.9rem, 1.2vw, 1.5rem);
-    /* font-size: 1.2rem; */
-   /* font-size: clamp(10px, 19.2px, 20px); */
+    font-size: clamp(0.9rem, 1.4vw, 1.5rem);
     padding-top: 2rem;
     text-align: start;
     color:#bab9b9
@@ -213,7 +236,6 @@ div.MuiAvatar-root {
     flex-direction: column;
     gap:1rem;
     font-size: clamp(1rem, 1vw, 1.5rem);
-    /* font-size: 1.2rem; */
     margin-bottom:2rem;
     padding: 3rem;
 
@@ -225,8 +247,6 @@ div.MuiAvatar-root {
     grid-template-columns: 1fr 1fr;
     gap:1rem;
 }
-
-
 
 .webContainer, .langContainer, .aiContainer, .databaseContainer{
     background-color: #2a2929;
@@ -329,6 +349,4 @@ gap:1rem;
   }
   
 
-/* bg: #121212 
-blue:#3399ff*/
 

@@ -5,7 +5,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { List } from '@mui/material';
 import { ListItem } from '@mui/material';
-import { ListItemIcon } from '@mui/material';
 import { ListItemText } from '@mui/material';
 
 function Contact() {
@@ -44,7 +43,7 @@ function Contact() {
                         <a href={item.path}><div className="icon"> {item.icon}</div></a>
                        
 
-                             {/* <ListItemIcon className="icon" >{item.icon}</ListItemIcon> */}
+                             
                              <div>
                               <ListItemText primary={item.title}  ></ListItemText>
                               <a className="itemText" href={item.path} style={{fontWeight:500, fontSize:"0.7rem", color:"#7A7A7A"}}> {item.text}</a>

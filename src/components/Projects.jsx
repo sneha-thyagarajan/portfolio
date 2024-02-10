@@ -58,10 +58,6 @@ function Projects(){
         })}
             </div>
 
-       
-
-
-
         </div>
     )
 }
