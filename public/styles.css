@@ -51,7 +51,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     padding-right: 3rem;
-    padding-left: 1.5;
+    padding-left: 2;
     width: 100vw;
    
 
@@ -65,7 +65,7 @@ body{
     bottom:4rem;
     border-radius: 0.5rem;
     height: fit-content;
-   max-width: fit-content;
+    max-width: fit-content;
     padding:3rem 1rem;
     margin:0 2rem;
     display: flex;
