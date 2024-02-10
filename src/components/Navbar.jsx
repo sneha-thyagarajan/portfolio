@@ -1,27 +1,34 @@
 import React from "react";
-import {Link} from "react-scroll";
-import { Switch } from '@mui/material';
+import DehazeRoundedIcon from '@mui/icons-material/DehazeRounded';
 
-function Navbar(props){
+
+
+
+
+
+function Navbar(){
+
     return(
-
+        
         <nav className="navbar">
+        
 
-        <h1>Portfolio</h1>
-        <div className="desktopMenu">
-            <Link className="desktopMenuListItem">About</Link>
-            <Link className="desktopMenuListItem">Skills</Link>
-            <Link className="desktopMenuListItem">Projects</Link>
-            <Link className="desktopMenuListItem">Art</Link>
-            <Switch
-              checked={props.checked}
-              onChange= {props.changeTheme}
-              inputProps={{ 'aria-label': 'controlled' }}
-            />
+
+        <h1><button className="collapse" style={{display:"none" , marginRight:"10px", backgroundColor:"transparent" ,color:"#3399ff", border:"none"}}> <DehazeRoundedIcon/> </button> Portfolio</h1>
+        <div className="desktopMenu"  >
+            <a className="desktopMenuListItem" style={{textDecoration:"none" }} smooth duration={5000} href="#about">About</a>
+            <a className="desktopMenuListItem" style={{textDecoration:"none"}} smooth duration={5000} href="#skills" >Skills</a>
+            <a className="desktopMenuListItem" style={{textDecoration:"none"}} smooth duration={5000} href="#projects">Projects</a>
+            <a className="desktopMenuListItem" style={{textDecoration:"none"}}  smooth duration={5000} href="#arts" >Art</a>
+            
     
         </div> 
 
+
+
+
         </nav>
+            
 
     )
 

@@ -37,7 +37,7 @@ export default function Art() {
   const digital=[ digital2, digital1,digital10,digital7, digital8,  digital3, digital4, digital5, digital6];
   const sketch=[ sketch2, sketch1, sketch6, sketch3, sketch4, sketch5,  sketch7, sketch8];
   return (
-    <div className="arts">
+    <div className="arts" id ="arts">
     <h1>Art</h1>
     <div className="artsContainer">
     <h4>Digital Art</h4>

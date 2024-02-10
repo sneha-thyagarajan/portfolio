@@ -65,7 +65,7 @@ function Skills(){
         },
         {
             title:"SQL",
-            text:"40",
+            text:"30",
             icon:<LinearProgress color="secondary"  variant="determinate" value={40} style={{height:"10px", borderRadius:"10px" , marginTop:"10px", marginBottom:"10px"}}/>
         },
     ]
@@ -110,7 +110,7 @@ function Skills(){
 
     return(
 
-        <div className="skills">
+        <div className="skills" id="skills">
             <h1>Skills</h1> 
 
             <div className="skillsContainer">

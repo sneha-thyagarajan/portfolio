@@ -40,11 +40,14 @@ function Contact() {
             {
                 items.map((item)=>{
                     return(
-                        <ListItem key={item.title} >
-                             <ListItemIcon style={{color:"#3399ff"}}>{item.icon}</ListItemIcon>
+                        <ListItem key={item.title}  >
+                        <a href={item.path}><div className="icon"> {item.icon}</div></a>
+                       
+
+                             {/* <ListItemIcon className="icon" >{item.icon}</ListItemIcon> */}
                              <div>
-                              <ListItemText primary={item.title} ></ListItemText>
-                              <a href={item.path} style={{fontWeight:500, fontSize:"0.7rem", color:"#7A7A7A"}}> {item.text}</a>
+                              <ListItemText primary={item.title}  ></ListItemText>
+                              <a className="itemText" href={item.path} style={{fontWeight:500, fontSize:"0.7rem", color:"#7A7A7A"}}> {item.text}</a>
                              </div>  
                        </ListItem>
 

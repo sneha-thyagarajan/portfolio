@@ -1,4 +1,6 @@
 import React from 'react';
+
+
 import image from '../images/Avatarpic.png';
 import {Avatar} from '@mui/material';
 import Contact from './Contact';
@@ -10,7 +12,7 @@ function Sidebar() {
              <Avatar
                alt="Profile"
                src={image}
-               sx={{ width: 170, height: 170 }}
+              //  sx={{ width: 170, height: "auto" }}
                variant='rounded'
              />
         </div>

@@ -2,6 +2,7 @@ import React from "react";
 import Cards from "./Cards";
 import Todolist from "../images/Todolist.png";
 import Weather from "../images/Weather.png";
+import Register from "../images/Register.png";
 
 function Projects(){
     const project=[
@@ -22,6 +23,13 @@ function Projects(){
             img:Todolist,
 
             url:"https://github.com/sneha-thyagarajan/ToDoList_UsingExpressJs"
+        },
+        {
+            name:"Registration Form",
+            alt:"Registration Form",
+            content:"CSS, Node.js, Express.js, EJS ,MongoDB",
+            img:Register,
+            url:"https://github.com/sneha-thyagarajan/RegistrationForm"
         }
 
 
@@ -31,7 +39,7 @@ function Projects(){
     }
 
     return(
-        <div className="projects">
+        <div className="projects" id ="projects">
             <h1>Projects</h1>
             <div className="projectsContainer">
             { project.map((project, index)=>{
