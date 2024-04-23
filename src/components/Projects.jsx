@@ -3,6 +3,7 @@ import Cards from "./Cards";
 import Todolist from "../images/Todolist.png";
 import Weather from "../images/Weather.png";
 import Register from "../images/Register.png";
+import Timer from "../images/timer.png";
 
 function Projects(){
     const project=[
@@ -30,6 +31,13 @@ function Projects(){
             content:"CSS, Node.js, Express.js, EJS ,MongoDB",
             img:Register,
             url:"https://github.com/sneha-thyagarajan/RegistrationForm"
+        },
+        {
+            name:"Timer React-App",
+            alt:"Timer App",
+            content:"React.js, Javascript, CSS",
+            img:Timer,
+            url:"https://github.com/sneha-thyagarajan/React-Timerapp"
         }
 
 

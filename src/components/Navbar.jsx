@@ -20,8 +20,6 @@ function Navbar(){
             <a className="desktopMenuListItem" style={{textDecoration:"none"}}  href="#skills" >Skills</a>
             <a className="desktopMenuListItem" style={{textDecoration:"none"}}  href="#projects">Projects</a>
             <a className="desktopMenuListItem" style={{textDecoration:"none"}}  href="#arts" >Art</a>
-            
-    
         </div> 
 
 
