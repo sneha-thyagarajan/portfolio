@@ -4,6 +4,7 @@ import Todolist from "../images/Todolist.png";
 import Weather from "../images/Weather.png";
 import Register from "../images/Register.png";
 import Timer from "../images/timer.png";
+import ExpenseTracker from "../images/ExpenseTracker.png";
 
 function Projects(){
     const project=[
@@ -38,6 +39,13 @@ function Projects(){
             content:"React.js, Javascript, CSS",
             img:Timer,
             url:"https://github.com/sneha-thyagarajan/React-Timerapp"
+        },
+        {
+            name:"Expense Tracker",
+            alt:"Expense Tracker",
+            content:"React.js, Javascript, CSS",
+            img:ExpenseTracker,
+            url:"https://github.com/sneha-thyagarajan/Expense-tracker-react"
         }
 
 
